@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/nama_dokumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            app:ms_background_color="@color/colorAccent"
+            app:ms_text_color="#ffffff"
+            app:ms_hint="Nama Dokumen"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/img_preview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/placeholder"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#80444444"/>
+
+</LinearLayout>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sertifikasi.PendaftaranActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="5dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/step1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="MEMILIH SKEMA SERTIFIKASI"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pada bagian ini, pilihlah skema yang akan di ujikan. Pilih salah satu."
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/skema_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="FR-APL-01. FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pada bagian ini, cantumkan data pribadi, data pendidikan formal serta data pekerjaan anda pada saat ini. Untuk bagian yang bertanda (*) wajib di isi."
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/pendaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:ms_background_color="@color/colorAccent"
+                    app:ms_text_color="#ffffff"
+                    app:ms_hint="Pendaftar"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="No Identitas"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Nama Lengkap"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Organisasi / Lembaga Pendidikan / Tempat Bekerja / Institusi Terkait"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Checklist jika merupakan perpanjangan sertifikan"
+                    android:layout_marginBottom="10dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Tempat Lahir"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Tanggal Lahir (05/10/1985)"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/jenis_kelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:ms_background_color="@color/colorAccent"
+                    app:ms_text_color="#ffffff"
+                    app:ms_hint="Jenis Kelamin"/>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/kewarganegaraan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:ms_background_color="@color/colorAccent"
+                    app:ms_text_color="#ffffff"
+                    app:ms_hint="Kewarganegaraan"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Alamat"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="No. Telp"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Pendidikan Terakhir (SMA SEDERAJAT/D1/D2/D3/S1/S2/S3)"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Nama Sekolah / Perguruan Tinggi"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Program Study"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Nama dan Alamat Perusahaan"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Jabatan"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="No. Telp Perusahaan"
+                        android:inputType="text" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="17dp"
+                        android:singleLine="true"
+                        android:hint="Email Perusahaan"
+                        android:inputType="textEmailAddress" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textColor="#fff"
+                    android:text="Pilih Lokasi Uji Kompetensi Terdekat dengan Domisili"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_to_step3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:text="Selanjutnya"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="UPLOAD BUKTI PENDUKUNG"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload beberapa dokumen yang menunjukan bukti pemenuhan persyaratan dasar sertifikasi yang ditetapkan dalam dokumen skema sertifikasi."
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Foto (Pas Foto)*"
+                            android:layout_marginBottom="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/img_foto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/placeholder"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Identitas Pribadi (KTP / SIM / Kartu Pelajar / Passport) *"
+                            android:layout_marginBottom="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/img_ktp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/placeholder" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CV (daftar riwayat hidup) *"
+                            android:layout_marginBottom="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/img_cv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/placeholder"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bukti Pendukung Kompetensi *"
+                            android:layout_marginBottom="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/img_pendukung"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/placeholder" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="Upload Dokumen Tambahan / Lainnya"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pada bagian ini, anda diminta untuk memilih bukti-bukti pendukung yang anda anggap relevan terhadap setiap elemen/KUK unit kompetensi. Pilihan dapat lebih dari 1(Satu) bukti pendukung. Tekan tombol Tambah Dokumen untuk menambah kolom input untuk bukti pendukung selain dari mandatori dokumen(Paspoto, Ijazah Terakhir, Identitas Pribadi)"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/dokumenlain_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btn_tambah_dokumen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textColor="#fff"
+                    android:text="Tambah Dokumen"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="FR-APL 02 ASESMEN MANDIRI"
+            fontPath="fonts/RobotoCondensed-Bold.ttf"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lakukan asesmen mandiri untuk menilai kompetensi anda pada setiap kriteria unjuk kerja (KUK) yangg tercakup didalam paket kompetensi pada skema sertifikasi. Pilih bukti pendukung yang telah anda upload sebelumnya sebagai dasar penetapan kompetensi anda pada asesmen mandiri ini."
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:text="Selesai dan Kirim"/>
+
+    </LinearLayout>
+
+</LinearLayout>

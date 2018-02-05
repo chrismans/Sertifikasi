@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sertifikasi.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_jmkp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_account"
+                android:drawableTint="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:paddingBottom="17dp"
+                android:singleLine="true"
+                android:hint="Username"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="RobotoCondensed-Regular.ttf"
+            tools:ignore="MissingPrefix">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawableTint="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:paddingBottom="17dp"
+                android:singleLine="true"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Login"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_no_akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Belum punya akun? Silakan Daftar Disini"/>
+
+</RelativeLayout>

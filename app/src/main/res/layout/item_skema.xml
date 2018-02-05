@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skema_sertifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textAllCaps="true"
+                android:text=""
+                fontPath="fonts/RobotoCondensed-Bold.ttf"
+                android:padding="10dp"
+                android:foreground="?attr/selectableItemBackground"/>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/detail_skema"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:ael_duration="500"
+                app:ael_interpolator="bounce"
+                app:ael_orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#80cccccc"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#F4AE01"
+                                android:textColor="#fff"
+                                android:text="Unit Kompetensi"
+                                android:layout_margin="5dp"/>
+
+                            <Button
+                                android:id="@+id/btn_pilih"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#449D44"
+                                android:textColor="#fff"
+                                android:text="Pilih Skema"
+                                android:layout_margin="5dp"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#286090"
+                            android:textColor="#fff"
+                            android:text="Dokumen Skema"
+                            android:layout_margin="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

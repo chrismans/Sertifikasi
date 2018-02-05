@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_pendaftaran"
+            android:icon="@drawable/ic_file"
+            android:title="Pendaftaran" />
+        <item
+            android:id="@+id/nav_cek_sertifikasi"
+            android:icon="@drawable/ic_search"
+            android:title="Cek Sertifikasi" />
+        <item
+            android:id="@+id/nav_skema_sertifikasi"
+            android:icon="@drawable/ic_format_list"
+            android:title="Skema Sertifikasi" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_bantuan"
+                android:icon="@drawable/ic_help"
+                android:title="Bantuan" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_setting"
+                android:title="Setting" />
+        </menu>
+    </item>
+
+</menu>

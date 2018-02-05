@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sertifikasi.DetailSertifikatActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/foto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="true"
+                    android:text="PANDU SEPTIAN GUMILAR"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO SERTIFIKAT" />
+
+                <TextView
+                    android:id="@+id/no_sertifikat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO REGISTRASI" />
+
+                <TextView
+                    android:id="@+id/no_registrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO SERI" />
+
+                <TextView
+                    android:id="@+id/no_seri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TANGGAL TERBIT" />
+
+                <TextView
+                    android:id="@+id/tgl_terbit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TANGGAL RCC" />
+
+                <TextView
+                    android:id="@+id/tgl_rcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO UJI KOMPETENSI" />
+
+                <TextView
+                    android:id="@+id/no_uji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="SKEMA" />
+
+                <TextView
+                    android:id="@+id/skema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TEMPAT UJI KOMPETENSI" />
+
+                <TextView
+                    android:id="@+id/tempat_uji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NAMA ASESOR" />
+
+                <TextView
+                    android:id="@+id/nama_asesor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TANGGAL PENDAFTARAN" />
+
+                <TextView
+                    android:id="@+id/tgl_daftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TANGGAL PRA ASESMEN" />
+
+                <TextView
+                    android:id="@+id/tgl_pra_asesmen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TANGGAL UJI KOMPETENSI" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tanggal_uji"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="REKOMENDASI ASESOR" />
+
+                <TextView
+                    android:id="@+id/rekomendasi_asesor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="TANGGAL TERBIT SERTIFIKAT" />
+
+                <TextView
+                    android:id="@+id/tgl_terbit_sertifikat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:text="NO. 65864864864"
+                    fontPath="fonts/RobotoCondensed-Bold.ttf"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#80cccccc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

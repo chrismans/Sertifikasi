@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorAccent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang Di Aplikasi Sertifikasi JMKP"
+        android:textSize="17sp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silakan Login atau Daftar"
+        android:textColor="#fff"/>
+
+
+</LinearLayout>
